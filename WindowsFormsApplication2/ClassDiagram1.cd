@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsApplication2.barCode" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAwCAAAAAAAACAAAACAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>barCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cBank" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAABAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>cBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cBillcs" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAIAABAAA=</HashCode>
+      <FileName>cBillcs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cCompany" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAIQAAAAAEAQAIAAAAAAAIGAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>cCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cContact" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAYAAABAAAAgAQAAAAegEBAJAEBAAAAgABBAAAAIA=</HashCode>
+      <FileName>cContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cCustomer" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAEAQAAAAAAAAAAEAAAAAQAGAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>cCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cOrder" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAgAAACAABAAAAAAAAACAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cProduct" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACAABAAAAAAIAAAAAAAIEAEAAAAAAAAIAAAEAA=</HashCode>
+      <FileName>cProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cService" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cStaff" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAAQAAgEAAAAAAEAAAgAAAGAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cStaff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.cStock" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.Enums" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormBill" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAQSAAAACCAACAAABCAMg4AACAECAAAAAAAAA=</HashCode>
+      <FileName>FormBill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormBuy" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAEAQSBAAASAAACAAAFCIFg4gEAAECAAACAQAIA=</HashCode>
+      <FileName>FormBuy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormCash" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAgAAAAAACAAAACAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormCash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormCheque" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAQCAAAACCAACAAABCIEg4AACAECAAAAAAgAA=</HashCode>
+      <FileName>FormCheque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormCompany" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAAAQQSAAABSCEACAAABCIMw7AAAAUGAIAAAAALA=</HashCode>
+      <FileName>FormCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormContact" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAABAAAAyAAAACgAAAAAEAACAAAAAAAAA=</HashCode>
+      <FileName>FormContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormCustomer" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAIAAQSAAAFSCEACAAABCIMg7AQAAECgAAAAAALA=</HashCode>
+      <FileName>FormCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormEntry" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAAAAAAACAAAACAAA4IAAAECAAAAAAEAA=</HashCode>
+      <FileName>FormEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormFrame" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABC0AMAAKQAACEBAACABKACUAQABAAAABQAhSBiCEE=</HashCode>
+      <FileName>FormFrame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormMain" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAQSAAABCAEACAAABCIPg4ABgAEGAAAAAAAIA=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormMesaj" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAQSAAAICBEACAAABCIMg5AAAAECAAAAAAAIA=</HashCode>
+      <FileName>FormMesaj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormOrder" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAAAAQSAAABCCEACAAABCIMw7AAAAEGAEABAAALA=</HashCode>
+      <FileName>FormOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormProduct" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAQSAgAAQCAQCAAABCIMw7AAAAkGAAAAAAAAA=</HashCode>
+      <FileName>FormProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormSell" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCABAAAQQSAQICCAAECAEAFCIFg4gEQIECAAACISAIA=</HashCode>
+      <FileName>FormSell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormService" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAAAAQSAAABCCEACEAABCIMg6AAAAEGAFAAAAALA=</HashCode>
+      <FileName>FormService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormSettings" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAABAIAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormStaff" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAAAAQSCQABCCEACAAABCIMg7AAAAEGAEAAAAALA=</HashCode>
+      <FileName>FormStaff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.FormStok" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAIAAAACAAAACAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>FormStok.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.frmTelephony" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCGAAIAgQSABQFCAAACAAQBDIGg4QJAAkCAIAABEIIA=</HashCode>
+      <FileName>frmTelephony.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.LineClass" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAQACAJAAAEQgAgIABAAAgAAAAAoEAAAAIBBAIAA=</HashCode>
+      <FileName>LineClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsFormsApplication2.Program" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.StrUtils" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>strUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.TAPIClass" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAJIgEAACUAMQQFAlhoAAYAKoKgABiIQDSAQQiAiAQ=</HashCode>
+      <FileName>TAPIClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsFormsApplication2.WindowsAPI" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAEAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>WindowsAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAABEAAAAQAAEAAAAAAABAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication2.Properties.Settings" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
