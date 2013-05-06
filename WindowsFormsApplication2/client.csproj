@@ -36,22 +36,25 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\DevExpress 2011.2\Components\Bin\Framework\DevExpress.Data.v11.2.dll</HintPath>
+      <HintPath>..\DevExpress.Data.v11.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\DevExpress 2011.2\Components\Bin\Framework\DevExpress.Utils.v11.2.dll</HintPath>
+      <HintPath>..\DevExpress.Utils.v11.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\DevExpress 2011.2\Components\Bin\Framework\DevExpress.XtraBars.v11.2.dll</HintPath>
+      <HintPath>..\DevExpress.XtraBars.v11.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\DevExpress 2011.2\Components\Bin\Framework\DevExpress.XtraEditors.v11.2.dll</HintPath>
+      <HintPath>..\DevExpress.XtraEditors.v11.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,47 +63,90 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="VoIPSDK">
-      <HintPath>..\..\..\Program Files\Ozeki\VoIP SIP SDK\SDK\.NET4\VoIPSDK.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="masistakipVTDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>masistakipVTDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="OP\callOP.cs" />
-    <Compile Include="OP\company.cs" />
-    <Compile Include="OP\companyOP.cs" />
-    <Compile Include="OP\customer.cs" />
-    <Compile Include="OP\customerOP.cs" />
-    <Compile Include="Forms\FormChargeDept.cs">
+    <Compile Include="Classes\auction.cs" />
+    <Compile Include="Classes\bankOwn.cs" />
+    <Compile Include="Classes\productList.cs" />
+    <Compile Include="Classes\user.cs" />
+    <Compile Include="Forms\FormBank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormChargeDept.Designer.cs">
-      <DependentUpon>FormChargeDept.cs</DependentUpon>
+    <Compile Include="Forms\FormBank.Designer.cs">
+      <DependentUpon>FormBank.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\barCode.cs">
+    <Compile Include="Forms\FormDepth.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\barCode.Designer.cs">
-      <DependentUpon>barCode.cs</DependentUpon>
+    <Compile Include="Forms\FormDepth.Designer.cs">
+      <DependentUpon>FormDepth.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form.cs">
+    <Compile Include="Forms\FormMap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Forms\FormMap.Designer.cs">
+      <DependentUpon>FormMap.cs</DependentUpon>
     </Compile>
-    <Compile Include="OP\message.cs" />
-    <Compile Include="OP\messageOP.cs" />
-    <Compile Include="OP\product.cs" />
-    <Compile Include="OP\productOP.cs" />
-    <Compile Include="OP\service.cs" />
-    <Compile Include="OP\serviceOP.cs" />
-    <Compile Include="OP\staff.cs" />
-    <Compile Include="OP\staffOP.cs" />
+    <Compile Include="Forms\FormSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSell.Designer.cs">
+      <DependentUpon>FormSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\bank.cs" />
+    <Compile Include="Classes\call.cs" />
+    <Compile Include="Forms\FormStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStore.Designer.cs">
+      <DependentUpon>FormStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\auctionOP.cs" />
+    <Compile Include="Operation\bankOwnOP.cs" />
+    <Compile Include="Operation\callOP.cs" />
+    <Compile Include="Classes\charge.cs" />
+    <Compile Include="Operation\cashOP.cs" />
+    <Compile Include="Operation\chargeOP.cs" />
+    <Compile Include="Classes\cheque.cs" />
+    <Compile Include="Operation\chequeOP.cs" />
+    <Compile Include="Classes\company.cs" />
+    <Compile Include="Operation\companyOP.cs" />
+    <Compile Include="Classes\customer.cs" />
+    <Compile Include="Operation\control.cs" />
+    <Compile Include="Operation\customerOP.cs" />
+    <Compile Include="Forms\FormCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCharge.Designer.cs">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBarcode.Designer.cs">
+      <DependentUpon>FormBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\dept.cs" />
+    <Compile Include="Operation\deptOP.cs" />
+    <Compile Include="Barcode\Ean13.cs" />
+    <Compile Include="Classes\message.cs" />
+    <Compile Include="Operation\helper.cs" />
+    <Compile Include="Operation\mapOP.cs" />
+    <Compile Include="Operation\messageOP.cs" />
+    <Compile Include="Classes\person.cs" />
+    <Compile Include="Operation\personOP.cs" />
+    <Compile Include="Classes\product.cs" />
+    <Compile Include="Operation\productListOP.cs" />
+    <Compile Include="Operation\productOP.cs" />
+    <Compile Include="Classes\productOrder.cs" />
+    <Compile Include="Operation\productOrderOP.cs" />
+    <Compile Include="Classes\service.cs" />
+    <Compile Include="Operation\serviceOP.cs" />
+    <Compile Include="Classes\staff.cs" />
+    <Compile Include="Operation\staffOP.cs" />
+    <Compile Include="Operation\stockOP.cs" />
+    <Compile Include="Operation\storeOP.cs" />
+    <Compile Include="Operation\userOP.cs" />
     <Compile Include="TAPI\Enums.cs" />
     <Compile Include="Forms\FormCash.cs">
       <SubType>Form</SubType>
@@ -138,17 +184,11 @@
     <Compile Include="Forms\FormCompany.Designer.cs">
       <DependentUpon>FormCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormBill.cs">
+    <Compile Include="Forms\FormBuy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormBill.Designer.cs">
-      <DependentUpon>FormBill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormBuySell.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormBuySell.Designer.cs">
-      <DependentUpon>FormBuySell.cs</DependentUpon>
+    <Compile Include="Forms\FormBuy.Designer.cs">
+      <DependentUpon>FormBuy.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormCheque.cs">
       <SubType>Form</SubType>
@@ -165,35 +205,23 @@
     <Compile Include="Forms\FormOrder.Designer.cs">
       <DependentUpon>FormOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMessenger.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormMessenger.Designer.cs">
-      <DependentUpon>FormMessenger.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormService.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormService.Designer.cs">
       <DependentUpon>FormService.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormSettings.cs">
+    <Compile Include="Forms\FormStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormSettings.Designer.cs">
-      <DependentUpon>FormSettings.cs</DependentUpon>
+    <Compile Include="Forms\FormStock.Designer.cs">
+      <DependentUpon>FormStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormStok.cs">
+    <Compile Include="Forms\FormTelephony.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormStok.Designer.cs">
-      <DependentUpon>FormStok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmTelephony.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmTelephony.designer.cs">
-      <DependentUpon>frmTelephony.cs</DependentUpon>
+    <Compile Include="Forms\FormTelephony.designer.cs">
+      <DependentUpon>FormTelephony.cs</DependentUpon>
     </Compile>
     <Compile Include="TAPI\LineClass.cs" />
     <Compile Include="Forms\MainPage.Designer.cs">
@@ -216,17 +244,17 @@
     <Compile Include="TAPI\strUtils.cs" />
     <Compile Include="TAPI\TAPIClass.cs" />
     <Compile Include="TAPI\WindowsAPI.cs" />
-    <EmbeddedResource Include="Forms\FormChargeDept.resx">
-      <DependentUpon>FormChargeDept.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormBank.resx">
+      <DependentUpon>FormBank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\barCode.resx">
-      <DependentUpon>barCode.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormCharge.resx">
+      <DependentUpon>FormCharge.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormBill.resx">
-      <DependentUpon>FormBill.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormBarcode.resx">
+      <DependentUpon>FormBarcode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormBuySell.resx">
-      <DependentUpon>FormBuySell.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormBuy.resx">
+      <DependentUpon>FormBuy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCash.resx">
       <DependentUpon>FormCash.cs</DependentUpon>
@@ -236,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormContact.resx">
       <DependentUpon>FormContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDepth.resx">
+      <DependentUpon>FormDepth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEntry.resx">
       <DependentUpon>FormEntry.cs</DependentUpon>
@@ -252,32 +283,32 @@
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMap.resx">
+      <DependentUpon>FormMap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormOrder.resx">
       <DependentUpon>FormOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMessenger.resx">
-      <DependentUpon>FormMessenger.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormSell.resx">
+      <DependentUpon>FormSell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormService.resx">
       <DependentUpon>FormService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormSettings.resx">
-      <DependentUpon>FormSettings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormStaff.resx">
       <DependentUpon>FormStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormStok.resx">
-      <DependentUpon>FormStok.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormStock.resx">
+      <DependentUpon>FormStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmTelephony.resx">
-      <DependentUpon>frmTelephony.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormStore.resx">
+      <DependentUpon>FormStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTelephony.resx">
+      <DependentUpon>FormTelephony.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -289,19 +320,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="masistakipVTDataSet.xsc">
-      <DependentUpon>masistakipVTDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="masistakipVTDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>masistakipVTDataSet.Designer.cs</LastGenOutput>
+    <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="masistakipVTDataSet.xss">
-      <DependentUpon>masistakipVTDataSet.xsd</DependentUpon>
-    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

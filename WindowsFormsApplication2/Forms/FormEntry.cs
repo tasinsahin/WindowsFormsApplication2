@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using DevExpress.XtraTabbedMdi;
+using DevExpress.XtraBars;
+using System.Reflection.Emit;
 
 namespace WindowsFormsApplication2
 {
@@ -15,128 +17,150 @@ namespace WindowsFormsApplication2
         public FormEntry()
         {
             InitializeComponent();
+            this.Closing += new CancelEventHandler(this.FormEntry_Closing);
         }
 
+        private void FormEntry_Closing(object sender, CancelEventArgs e)
+        {
+            e.Cancel = false;
+        }
+        public bool isClosing = true;
+
+        user user = new user();
+        userOP userOP = new userOP();
+        DataTable table = new DataTable();
+        public bool pass=false;
+        public bool cancel = false;
         private void FormEntry_Load(object sender, EventArgs e)
         {
             groupBox2.Visible = false;
+            this.Size = MinimumSize;
+            makeFill();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bool CorrectPassword = false;
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Server=193.140.200.25;Database=MasisTakipVT;User ID=cet311;Password=cet311;";
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "select LoginName, Password from userdb";
-            cmd.CommandTimeout = 30;
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = conn;
-
-
-            conn.Open();
-
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            while (dr.Read())
+            table.Clear();
+            user.userName = txtName.Text.ToString();
+            user.passwordd = txtPassword.Text.ToString();
+            table=userOP.userControl(user);
+            if (table.Rows.Count > 0)
             {
-                string dbLoginName = (string)dr["LoginName"];
-                string dbPassword = dr.GetString(1);
-                if ((dbLoginName == txtName.Text) && dbPassword == txtPassword.Text)
-                {
-                    CorrectPassword = true;
-                    break;
-                }
-            }
-
-            dr.Close();
-            dr.Dispose();
-            conn.Close();
-            conn.Dispose();
-
-            if (CorrectPassword)
-            {
-                ((FormFrame)(this.Owner)).LoginName = txtName.Text;
-                this.DialogResult = DialogResult.OK;
+                isClosing = false;
                 this.Close();
+                pass = true;
             }
             else
             {
-                MessageBox.Show("Kullanıcı Adı/Şifre Hatası");
-                txtName.Text = "";
-                txtPassword.Text = "";
-                txtName.Focus();
-
+                MessageBox.Show("Lütfen tekrar deneyin", "hatalı giriş");
+                pass = false;
             }
         }
 
-    /*    private void Control()
-        {
-            string user=txtName.Text.ToString();
-            string pass=txtPassword.Text.ToString();
-            foreach (userInfo item in MasisData.userInfos)
-	        {
-	    	 if (user==item.userName && pass==item.password)
-	            {
-                  //  this.Hide();
-                   //  formFrame.Show(); 
-	            }
-             else if (user==item.userName && pass!=item.password)
-                {
-                    label1.Text = "Merhaba" + item.userName + "Hatalı şifre girdiniz";
-                }
-             else if (user!=item.userName)
-                {
-                    label1.Text = "Hatalı Kullanıcı Adı";
-                }
-	        }            
-        } */
-
         private void button1_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = false;
             groupBox2.Visible = true;
+            this.Size = MaximumSize;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             if (textBox4.Text.ToString()==textBox5.Text.ToString())
             {
-                //addUserInfo();
+                if (textBox6.Text == "1234")
+                {
+                    user.name = textBox1.Text.ToString();
+                    user.surname = textBox2.Text.ToString();
+                    user.userName = textBox3.Text.ToString();
+                    user.passwordd = textBox4.Text.ToString();
+                    userOP.UserAdd(user);
+                    label2.Text = "Kullanıcı kaydı başarılı";
+                    groupBox2.Visible = false;
+                    groupBox1.Visible = true;
+                    txtName.Text = user.userName;
+                    this.Size = MinimumSize;
+                }
+                else
+                {
+                    label2.Text = "Onaylama kodunu yanlış girdiniz";
+                }
+            }
+            else
+            {
+                label2.Text = "Şifre uyuşmazlığı";
             }
         }
 
-       /* private void addUserInfo()
-        {
-            
-            userInfo userInfo = new userInfo();
-            userInfoOP userInfOP = new userInfoOP();
-            bool existing=userInfOP.existingUserNameControl(textBox3.Text.ToString());
-            if (existing)
-            {
-                label2.Text = "Bu Kullanıcı Adı Sistemde Mevcut !";
-            }
-            else if (!existing)
-            {
-                userInfo.userName = textBox3.Text.ToString();
-                userInfo.password = textBox4.Text.ToString();
-                MasisData.userInfos.Add(userInfo);
-                groupBox2.Visible = false;
-                groupBox1.Visible = true; 
-            }
-        } */
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+            cancel = true;
+            isClosing = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             groupBox2.Visible = false;
             groupBox1.Visible = true;
+            this.Size = MinimumSize;
+        }
+        public void makeFill()
+        {
+            txtName.Text = "Kullanıcı Adı";
+            txtPassword.Text = "Şifre";
+            textBox1.Text = "Adı";
+            textBox2.Text = "Soyadı";
+            textBox3.Text = "Kullanıcı Adı";
+            textBox4.Text = "Şifre";
+            textBox5.Text = "Şifre";
+            textBox6.Text = "Onaylama Kodu";
+        }
+        private void txtName_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtName.Text = "";
+        }
+
+        private void txtPassword_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtPassword.Text = "";
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox1.Text = "";
+        }
+
+
+        private void textBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox3.Text = "";
+        }
+
+        private void textBox4_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox4.Text = "";
+        }
+
+        private void textBox5_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox5.Text = "";
+        }
+
+        private void textBox6_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox6.Text = "";
+        }
+
+        private void textBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox2.Text = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            makeFill();
         }
     }
 }

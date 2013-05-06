@@ -1,40 +1,53 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "WindowsFormsApplication2\client.csproj", "{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csproj", "{3B17802D-D15B-49D3-A854-213D094AEACF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|Mixed Platforms = CD_ROM|Mixed Platforms
+		CD_ROM|x86 = CD_ROM|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|Mixed Platforms = DVD-5|Mixed Platforms
+		DVD-5|x86 = DVD-5|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|Mixed Platforms = SingleImage|Mixed Platforms
+		SingleImage|x86 = SingleImage|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.CD_ROM|Any CPU.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.CD_ROM|Mixed Platforms.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.CD_ROM|Mixed Platforms.Build.0 = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.CD_ROM|x86.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.CD_ROM|x86.Build.0 = Release|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|Any CPU.Build.0 = Debug|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|x86.ActiveCfg = Debug|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Debug|x86.Build.0 = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.DVD-5|Any CPU.ActiveCfg = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.DVD-5|Mixed Platforms.ActiveCfg = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.DVD-5|Mixed Platforms.Build.0 = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.DVD-5|x86.ActiveCfg = Debug|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.DVD-5|x86.Build.0 = Debug|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Release|Any CPU.ActiveCfg = Release|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Release|x86.ActiveCfg = Release|x86
 		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.Release|x86.Build.0 = Release|x86
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{3B17802D-D15B-49D3-A854-213D094AEACF}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.SingleImage|Any CPU.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.SingleImage|Mixed Platforms.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.SingleImage|Mixed Platforms.Build.0 = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.SingleImage|x86.ActiveCfg = Release|x86
+		{EF5DF02E-0B73-4F76-9A1F-0E3E79D5932A}.SingleImage|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

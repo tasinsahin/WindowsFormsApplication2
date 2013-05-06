@@ -29,13 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.masistakipVTDataSet = new WindowsFormsApplication2.masistakipVTDataSet();
-            this.masistakipVTDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grb1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.BtnCancel1 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grb2 = new System.Windows.Forms.GroupBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox39 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnCancel2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox38 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,9 +93,6 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -97,40 +113,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCancel2 = new System.Windows.Forms.Button();
-            this.btnOk = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.BtnCancel1 = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.masistakipVTDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masistakipVTDataSetBindingSource)).BeginInit();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.grb1.SuspendLayout();
-            this.grb2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.grb2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // masistakipVTDataSet
-            // 
-            this.masistakipVTDataSet.DataSetName = "masistakipVTDataSet";
-            this.masistakipVTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // masistakipVTDataSetBindingSource
-            // 
-            this.masistakipVTDataSetBindingSource.DataSource = this.masistakipVTDataSet;
-            this.masistakipVTDataSetBindingSource.Position = 0;
             // 
             // grb1
             // 
+            this.grb1.Controls.Add(this.label12);
+            this.grb1.Controls.Add(this.button1);
             this.grb1.Controls.Add(this.textBox41);
             this.grb1.Controls.Add(this.textBox40);
-            this.grb1.Controls.Add(this.grb2);
             this.grb1.Controls.Add(this.textBox5);
             this.grb1.Controls.Add(this.textBox4);
             this.grb1.Controls.Add(this.textBox3);
@@ -141,12 +136,32 @@
             this.grb1.Controls.Add(this.btnAdd);
             this.grb1.Controls.Add(this.textBox1);
             this.grb1.Controls.Add(this.dataGridView1);
-            this.grb1.Location = new System.Drawing.Point(12, 32);
+            this.grb1.Location = new System.Drawing.Point(12, 12);
             this.grb1.Name = "grb1";
-            this.grb1.Size = new System.Drawing.Size(1230, 684);
+            this.grb1.Size = new System.Drawing.Size(1220, 653);
             this.grb1.TabIndex = 1;
             this.grb1.TabStop = false;
             this.grb1.Text = "Firma";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(64, 57);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "Arama :";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(1114, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 62);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Haritada göster";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox41
             // 
@@ -154,17 +169,136 @@
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(103, 21);
             this.textBox41.TabIndex = 34;
+            this.textBox41.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox41_MouseClick);
+            this.textBox41.TextChanged += new System.EventHandler(this.textBox41_TextChanged);
             // 
             // textBox40
             // 
-            this.textBox40.Location = new System.Drawing.Point(773, 44);
+            this.textBox40.Location = new System.Drawing.Point(795, 44);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(103, 21);
             this.textBox40.TabIndex = 33;
+            this.textBox40.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox40_MouseClick);
+            this.textBox40.TextChanged += new System.EventHandler(this.textBox40_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(663, 46);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(103, 21);
+            this.textBox5.TabIndex = 25;
+            this.textBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox5_MouseClick);
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(530, 48);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(103, 21);
+            this.textBox4.TabIndex = 24;
+            this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox4_MouseClick);
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(399, 50);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(103, 21);
+            this.textBox3.TabIndex = 23;
+            this.textBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox3_MouseClick);
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(266, 51);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(103, 21);
+            this.textBox2.TabIndex = 22;
+            this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // BtnCancel1
+            // 
+            this.BtnCancel1.ForeColor = System.Drawing.Color.Black;
+            this.BtnCancel1.Location = new System.Drawing.Point(1114, 421);
+            this.BtnCancel1.Name = "BtnCancel1";
+            this.BtnCancel1.Size = new System.Drawing.Size(85, 60);
+            this.BtnCancel1.TabIndex = 21;
+            this.BtnCancel1.Text = "Vazgeç";
+            this.BtnCancel1.UseVisualStyleBackColor = true;
+            this.BtnCancel1.Click += new System.EventHandler(this.BtnCancel1_Click_1);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.Location = new System.Drawing.Point(1114, 260);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 60);
+            this.btnDelete.TabIndex = 20;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(1114, 178);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(85, 60);
+            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.Text = "Düzenle";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.Location = new System.Drawing.Point(1114, 101);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(85, 59);
+            this.btnAdd.TabIndex = 18;
+            this.btnAdd.Text = "Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(130, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(103, 21);
+            this.textBox1.TabIndex = 17;
+            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(38, 84);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1054, 549);
+            this.dataGridView1.TabIndex = 16;
             // 
             // grb2
             // 
+            this.grb2.Controls.Add(this.textBox42);
+            this.grb2.Controls.Add(this.label11);
             this.grb2.Controls.Add(this.textBox39);
+            this.grb2.Controls.Add(this.label30);
+            this.grb2.Controls.Add(this.label32);
+            this.grb2.Controls.Add(this.label31);
+            this.grb2.Controls.Add(this.btnOk);
+            this.grb2.Controls.Add(this.btnCancel2);
             this.grb2.Controls.Add(this.label10);
             this.grb2.Controls.Add(this.textBox38);
             this.grb2.Controls.Add(this.label9);
@@ -203,9 +337,6 @@
             this.grb2.Controls.Add(this.textBox7);
             this.grb2.Controls.Add(this.textBox6);
             this.grb2.Controls.Add(this.label29);
-            this.grb2.Controls.Add(this.label30);
-            this.grb2.Controls.Add(this.label31);
-            this.grb2.Controls.Add(this.label32);
             this.grb2.Controls.Add(this.label33);
             this.grb2.Controls.Add(this.label14);
             this.grb2.Controls.Add(this.label15);
@@ -226,21 +357,84 @@
             this.grb2.Controls.Add(this.label3);
             this.grb2.Controls.Add(this.label2);
             this.grb2.Controls.Add(this.label1);
-            this.grb2.Controls.Add(this.btnCancel2);
-            this.grb2.Controls.Add(this.btnOk);
-            this.grb2.Location = new System.Drawing.Point(387, 0);
+            this.grb2.Location = new System.Drawing.Point(349, 26);
             this.grb2.Name = "grb2";
             this.grb2.Size = new System.Drawing.Size(534, 639);
             this.grb2.TabIndex = 32;
             this.grb2.TabStop = false;
             this.grb2.Text = "Firma Ekle";
             // 
+            // textBox42
+            // 
+            this.textBox42.Location = new System.Drawing.Point(362, 484);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.Size = new System.Drawing.Size(128, 21);
+            this.textBox42.TabIndex = 125;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(17, 228);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 13);
+            this.label11.TabIndex = 124;
+            this.label11.Text = "accountNumber";
+            // 
             // textBox39
             // 
-            this.textBox39.Location = new System.Drawing.Point(362, 479);
+            this.textBox39.Location = new System.Drawing.Point(362, 448);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(128, 21);
             this.textBox39.TabIndex = 123;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(29, 471);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(67, 13);
+            this.label30.TabIndex = 82;
+            this.label30.Text = "faturaAdresi";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(28, 406);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(61, 13);
+            this.label32.TabIndex = 80;
+            this.label32.Text = "vergiDaires";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(28, 443);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(73, 13);
+            this.label31.TabIndex = 81;
+            this.label31.Text = "vergiNumaras";
+            // 
+            // btnOk
+            // 
+            this.btnOk.ForeColor = System.Drawing.Color.Black;
+            this.btnOk.Location = new System.Drawing.Point(147, 567);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(82, 49);
+            this.btnOk.TabIndex = 6;
+            this.btnOk.Text = "Tamam";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // btnCancel2
+            // 
+            this.btnCancel2.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel2.Location = new System.Drawing.Point(246, 567);
+            this.btnCancel2.Name = "btnCancel2";
+            this.btnCancel2.Size = new System.Drawing.Size(82, 49);
+            this.btnCancel2.TabIndex = 8;
+            this.btnCancel2.Text = "Vazgeç";
+            this.btnCancel2.UseVisualStyleBackColor = true;
+            this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
             // label10
             // 
@@ -253,7 +447,7 @@
             // 
             // textBox38
             // 
-            this.textBox38.Location = new System.Drawing.Point(362, 448);
+            this.textBox38.Location = new System.Drawing.Point(362, 417);
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(128, 21);
             this.textBox38.TabIndex = 121;
@@ -269,14 +463,14 @@
             // 
             // textBox37
             // 
-            this.textBox37.Location = new System.Drawing.Point(362, 417);
+            this.textBox37.Location = new System.Drawing.Point(362, 386);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(128, 21);
             this.textBox37.TabIndex = 119;
             // 
             // textBox36
             // 
-            this.textBox36.Location = new System.Drawing.Point(362, 378);
+            this.textBox36.Location = new System.Drawing.Point(362, 347);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(128, 21);
             this.textBox36.TabIndex = 118;
@@ -292,28 +486,28 @@
             // 
             // textBox35
             // 
-            this.textBox35.Location = new System.Drawing.Point(362, 343);
+            this.textBox35.Location = new System.Drawing.Point(362, 312);
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(128, 21);
             this.textBox35.TabIndex = 116;
             // 
             // textBox34
             // 
-            this.textBox34.Location = new System.Drawing.Point(362, 312);
+            this.textBox34.Location = new System.Drawing.Point(362, 281);
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(128, 21);
             this.textBox34.TabIndex = 115;
             // 
             // textBox33
             // 
-            this.textBox33.Location = new System.Drawing.Point(362, 279);
+            this.textBox33.Location = new System.Drawing.Point(362, 248);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(128, 21);
             this.textBox33.TabIndex = 114;
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(362, 243);
+            this.textBox32.Location = new System.Drawing.Point(362, 212);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(128, 21);
             this.textBox32.TabIndex = 113;
@@ -321,7 +515,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 261);
+            this.label7.Location = new System.Drawing.Point(17, 298);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 112;
@@ -329,100 +523,106 @@
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(362, 216);
+            this.textBox31.Location = new System.Drawing.Point(362, 185);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(128, 21);
             this.textBox31.TabIndex = 111;
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(362, 183);
+            this.textBox30.Location = new System.Drawing.Point(364, 144);
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(128, 21);
+            this.textBox30.Size = new System.Drawing.Size(33, 21);
             this.textBox30.TabIndex = 110;
+            this.textBox30.Text = "0532";
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(403, 146);
+            this.textBox29.Location = new System.Drawing.Point(403, 144);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(87, 21);
             this.textBox29.TabIndex = 109;
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(362, 146);
+            this.textBox28.Location = new System.Drawing.Point(362, 110);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(35, 21);
             this.textBox28.TabIndex = 108;
+            this.textBox28.Text = "0532";
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(403, 105);
+            this.textBox27.Location = new System.Drawing.Point(403, 110);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(87, 21);
             this.textBox27.TabIndex = 107;
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(362, 105);
+            this.textBox26.Location = new System.Drawing.Point(362, 69);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(33, 21);
             this.textBox26.TabIndex = 106;
+            this.textBox26.Text = "0324";
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(403, 70);
+            this.textBox25.Location = new System.Drawing.Point(403, 67);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(87, 21);
             this.textBox25.TabIndex = 105;
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(362, 70);
+            this.textBox24.Location = new System.Drawing.Point(364, 42);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(33, 21);
             this.textBox24.TabIndex = 104;
+            this.textBox24.Text = "0324";
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(403, 37);
+            this.textBox23.Location = new System.Drawing.Point(403, 40);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(87, 21);
             this.textBox23.TabIndex = 103;
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(362, 37);
+            this.textBox22.Location = new System.Drawing.Point(170, 540);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(33, 21);
+            this.textBox22.Size = new System.Drawing.Size(65, 21);
             this.textBox22.TabIndex = 102;
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(159, 504);
+            this.textBox21.Location = new System.Drawing.Point(112, 540);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(76, 21);
+            this.textBox21.Size = new System.Drawing.Size(42, 21);
             this.textBox21.TabIndex = 101;
+            this.textBox21.Text = "0324";
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(112, 504);
+            this.textBox20.Location = new System.Drawing.Point(170, 511);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(34, 21);
+            this.textBox20.Size = new System.Drawing.Size(65, 21);
             this.textBox20.TabIndex = 100;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(159, 468);
+            this.textBox19.Location = new System.Drawing.Point(112, 510);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(76, 21);
+            this.textBox19.Size = new System.Drawing.Size(42, 21);
             this.textBox19.TabIndex = 99;
+            this.textBox19.Text = "0324";
             // 
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(112, 468);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(34, 21);
+            this.textBox18.Size = new System.Drawing.Size(123, 21);
             this.textBox18.TabIndex = 98;
             // 
             // textBox17
@@ -512,43 +712,16 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(17, 435);
+            this.label29.Location = new System.Drawing.Point(23, 371);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(66, 13);
             this.label29.TabIndex = 83;
             this.label29.Text = "faturaBaşliğı";
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(17, 400);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(67, 13);
-            this.label30.TabIndex = 82;
-            this.label30.Text = "faturaAdresi";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(17, 367);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(73, 13);
-            this.label31.TabIndex = 81;
-            this.label31.Text = "vergiNumaras";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(17, 326);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(61, 13);
-            this.label32.TabIndex = 80;
-            this.label32.Text = "vergiDaires";
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(17, 291);
+            this.label33.Location = new System.Drawing.Point(15, 329);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(84, 13);
             this.label33.TabIndex = 79;
@@ -656,7 +829,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(23, 507);
+            this.label25.Location = new System.Drawing.Point(40, 543);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(27, 13);
             this.label25.TabIndex = 67;
@@ -665,7 +838,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(23, 471);
+            this.label26.Location = new System.Drawing.Point(40, 507);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(27, 13);
             this.label26.TabIndex = 66;
@@ -674,7 +847,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 229);
+            this.label4.Location = new System.Drawing.Point(23, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 45;
@@ -683,7 +856,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 188);
+            this.label5.Location = new System.Drawing.Point(23, 191);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 44;
@@ -692,7 +865,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 153);
+            this.label6.Location = new System.Drawing.Point(23, 156);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 43;
@@ -725,111 +898,9 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "id";
             // 
-            // btnCancel2
+            // errorProvider1
             // 
-            this.btnCancel2.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel2.Location = new System.Drawing.Point(264, 549);
-            this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel2.TabIndex = 8;
-            this.btnCancel2.Text = "Vazgeç";
-            this.btnCancel2.UseVisualStyleBackColor = true;
-            // 
-            // btnOk
-            // 
-            this.btnOk.ForeColor = System.Drawing.Color.Black;
-            this.btnOk.Location = new System.Drawing.Point(173, 549);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 6;
-            this.btnOk.Text = "Tamam";
-            this.btnOk.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(622, 44);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(103, 21);
-            this.textBox5.TabIndex = 25;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(481, 44);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(103, 21);
-            this.textBox4.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(337, 44);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(103, 21);
-            this.textBox3.TabIndex = 23;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(188, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(103, 21);
-            this.textBox2.TabIndex = 22;
-            // 
-            // BtnCancel1
-            // 
-            this.BtnCancel1.ForeColor = System.Drawing.Color.Black;
-            this.BtnCancel1.Location = new System.Drawing.Point(1114, 340);
-            this.BtnCancel1.Name = "BtnCancel1";
-            this.BtnCancel1.Size = new System.Drawing.Size(93, 44);
-            this.BtnCancel1.TabIndex = 21;
-            this.BtnCancel1.Text = "Vazgeç";
-            this.BtnCancel1.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1114, 260);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(93, 44);
-            this.btnDelete.TabIndex = 20;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(1114, 178);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(93, 44);
-            this.btnUpdate.TabIndex = 19;
-            this.btnUpdate.Text = "Düzenle";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(1114, 101);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(93, 43);
-            this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = "Ekle";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(38, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 21);
-            this.textBox1.TabIndex = 17;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.masistakipVTDataSetBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1054, 600);
-            this.dataGridView1.TabIndex = 16;
+            this.errorProvider1.ContainerControl = this;
             // 
             // FormCompany
             // 
@@ -837,25 +908,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 774);
             this.Controls.Add(this.grb1);
+            this.Controls.Add(this.grb2);
             this.Name = "FormCompany";
             this.Text = "Form3";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.masistakipVTDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masistakipVTDataSetBindingSource)).EndInit();
             this.grb1.ResumeLayout(false);
             this.grb1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.grb2.ResumeLayout(false);
             this.grb2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.BindingSource masistakipVTDataSetBindingSource;
-        private masistakipVTDataSet masistakipVTDataSet;
         private System.Windows.Forms.GroupBox grb1;
         private System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.TextBox textBox40;
@@ -923,17 +992,22 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel2;
-        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button BtnCancel1;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox42;
+        public System.Windows.Forms.Button btnOk;
+        public System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
 
 
     }
